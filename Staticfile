@@ -1,2 +1,2 @@
 root: .
-index_fallback: true
+try_files: {path} /index.html

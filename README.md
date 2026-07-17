@@ -1,19 +1,17 @@
-# Whack Crylie — Railway Static Deployment
+# WhackACrylie: Office Physics Edition
 
-This version intentionally contains no Dockerfile, package.json, package-lock.json, server.js, or railway.json.
-Railway Railpack detects the root index.html/Staticfile and serves the game as a static site with Caddy.
+A static browser game with draggable office tools, throwable ragdoll physics, optional custom face upload, detachable illustrated joints, stylized red-paint particles, and an always-available Cleaner reset.
 
-## Deploy
-1. Delete every existing file from the GitHub repository.
-2. Extract this ZIP locally.
-3. Upload these five files directly to the repository root:
-   - index.html
-   - styles.css
-   - game.js
-   - Staticfile
-   - README.md
-4. Commit the files.
-5. In Railway, redeploy the latest commit.
-6. Remove any custom Build Command or Start Command from Railway service settings.
+## Railway deployment
 
-The uploaded face image stays in the player's browser and is not uploaded to a server.
+Upload these files directly to the GitHub repository root:
+
+- `index.html`
+- `styles.css`
+- `game.js`
+- `Staticfile`
+- `README.md`
+
+Do not add a `package.json`, `server.js`, `railway.json`, or `Dockerfile`. Railway Railpack should detect this as a Staticfile project.
+
+Clear any custom Build Command, Start Command, or Root Directory in Railway, then redeploy the latest commit.
